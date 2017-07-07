@@ -66,10 +66,10 @@
                 if($page == 0 || $page == 1) {
                     $page1 = 0;
                 } else {
-                    $page1 = ($page * 3) - 3;
+                    $page1 = ($page * 4) - 4;
                 }
 
-               $q = "SELECT * FROM users LIMIT $page1, 3";
+               $q = "SELECT * FROM `users` ORDER BY `id` DESC LIMIT $page1, 4";
                $r = mysqli_query($connec, $q);
 
                while($data = mysqli_fetch_array($r)) {
@@ -96,7 +96,7 @@
                     $result = mysqli_query($connec, $query);
                     $count = mysqli_num_rows($result);
 
-                    $calc = $count/3;   
+                    $calc = $count/4;   
                     $calc = ceil($calc);
 
                     mysqli_free_result($result);
