@@ -36,6 +36,8 @@
         height: 100vh;
         /*background: #64B5F6;*/
         font-family: 'Roboto', Helvetica, sans-serif;
+        padding-left: 2em;
+        padding-right: 2em;
     }
     
     hr {
@@ -48,10 +50,34 @@
         letter-spacing: 1px;
     }
     
+    .myDiv {
+        position: relative; 
+        top: 100px;
+    }
+    
+    @media screen and (max-width: 600px){
+        p {
+            font-size: 16px;
+        }
+        
+        label {
+            font-size: 16px;
+            letter-spacing: inherit;
+        }
+        
+        .myDiv {
+            top: 50px;
+        }
+        
+        .center {
+            text-align: center;
+        }
+    }
+    
 </style>
 <?php include('include/header.php') ?>
  <div class="wrap-content">
-     <div class="container" style="position: relative; top: 100px;">
+     <div class="container myDiv">
     <div class="row">
       <h2 class="title" align="center">Portfolio's Collection</h2>
       <hr>
@@ -66,7 +92,9 @@
           <label for="web-link">Inspiration Link:</label>
           <input class="form-control" type="text" name="web-link" value="">
         </div>
+        <div class="center">
         <input type="submit" name="submit-form" class="btn btn-success">
+        </div>
       </form>
     </div>
     </div>

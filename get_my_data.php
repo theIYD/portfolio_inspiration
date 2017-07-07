@@ -48,6 +48,25 @@
         height: auto;
         text-align: center;
     }
+    
+    @media screen and (max-width: 600px) {
+        .myDiv {
+            max-height: 300px;
+            overflow-y: scroll;
+        }
+        
+        .inspire h3 {
+            font-size: 18px;
+        }
+        
+        .inspire a h5 {
+            font-size: 12px;
+        }
+        
+        
+        
+        
+    }
 </style>
 
 <div class="wrap-content">
@@ -57,6 +76,7 @@
             <hr>
 
            <div class="col-md-12">
+               <div class="myDiv">
 
                <?php 
                require 'config/config.php';
@@ -85,10 +105,11 @@
 
 
                ?>
-
+            </div>
+           </div>
            </div>
            <div class="center">
-            <div class="pagination pagination-lg">
+            <div class="pagination pagination-sm">
                 <?php
                 require 'config/config.php';
 
@@ -109,8 +130,10 @@
                     <li><a href="get_my_data.php?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
                     <?php } ?>
                     </div>
+                    
             </div>
-            <a href="."><button class="btn btn-default">Back</button></a>
+            <div style="text-align: center;">
+                <a href="."><button style="padding: 10px 42px;" class="btn btn-primary">Back</button></a>
+            </div>
         </div>
     </div>
-</div>
