@@ -3,9 +3,6 @@
     require 'config/config.php';
 
     include('include/header.php'); 
-    include('include/footer.php'); 
-
-    
 ?>
 
 <style>
@@ -53,6 +50,8 @@
         .myDiv {
             max-height: 300px;
             overflow-y: scroll;
+            position: relative;
+            top: -25px;
         }
         
         .inspire h3 {
@@ -61,6 +60,16 @@
         
         .inspire a h5 {
             font-size: 12px;
+        }
+        
+        .center {
+            position: relative;
+            top: -30px;
+        }
+        
+        .myDivTwo {
+            position: relative;
+            top: -30px;
         }
         
         
@@ -132,8 +141,9 @@
                     </div>
                     
             </div>
-            <div style="text-align: center;">
+            <div class="myDivTwo" style="text-align: center;">
                 <a href="."><button style="padding: 10px 42px;" class="btn btn-primary">Back</button></a>
             </div>
         </div>
     </div>
+    <?php include('include/footer.php');  ?>
