@@ -1,4 +1,5 @@
-<?php
+
+    <?php
 
     require 'config/config.php';
     
@@ -28,6 +29,8 @@
         height: 100vh;
         /*background: #64B5F6;*/
         font-family: 'Roboto', Helvetica, sans-serif;
+        padding-left: 4em;
+        padding-right: 4em;
     }
     .title {
         text-align: center;
