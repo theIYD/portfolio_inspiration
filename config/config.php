@@ -1,7 +1,9 @@
 <?php 
 
+    define('ROOT_URL', 'https://coeval-gangways.000webhostapp.com/');
+
     $DB_HOST = 'localhost';
-    $DB_USERNAME = 'root';
+    $DB_USERNAME = 'id2171619_portfolioinspiration';
     $DB_PASS = 'idrees786110';
     
     //Create a connection
@@ -13,7 +15,7 @@
   }
 
   //Check if database exist
-  if(!mysqli_select_db($connec, 'portfolios')) {
+  if(!mysqli_select_db($connec, 'id2171619_portfolios')) {
     echo 'Could not find the database you are looking for';
   }
 ?>

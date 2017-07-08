@@ -1,6 +1,7 @@
 <?php
     
     require 'config/config.php';
+    require 'config/constants.php';
 
     if (isset($_POST['submit-form'])) {
         $name = $_POST['username'];
@@ -55,6 +56,11 @@
         top: 100px;
     }
     
+    form {
+        position: relative;
+        top: 50px;
+    }
+    
     @media screen and (max-width: 600px){
         p {
             font-size: 16px;
@@ -72,6 +78,10 @@
         .center {
             text-align: center;
         }
+        
+        form {
+            top: 30px;
+        }
     }
     
 </style>
@@ -82,7 +92,7 @@
       <h2 class="title" align="center">Portfolio's Collection</h2>
       <hr>
       <p>It is a crowd sourced website where users can enter the link of portfolio's which can be used <br> as an inspiration to those who are beginners in building a portfolio of themselves.</p>
-      <form method="post" action="" style="position: relative; top: 50px;">
+      <form method="post" action="">
         <div class="form-group">
           <label for="username">Name of the portfolio owner</label>
           <input class="form-control" type="text" name="username" value="">
@@ -94,6 +104,7 @@
         </div>
         <div class="center">
         <input type="submit" name="submit-form" class="btn btn-success">
+        <a class="btn btn-default" href="<?php echo ROOT_URL; ?>">Back</a>
         </div>
       </form>
     </div>

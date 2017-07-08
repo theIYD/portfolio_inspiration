@@ -10,10 +10,9 @@
   <title>Portfolio Inspirations</title>
 </head>
 <body>
-<div class="background">
 
 <style>
-    .background {
+    body {
         background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(include/assets/bg.jpg);
         background-position: center center;
         background-size: cover;

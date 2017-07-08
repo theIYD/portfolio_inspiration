@@ -1,6 +1,7 @@
 <?php
 
     require 'config/config.php';
+    require 'config/constants.php';
 
     include('include/header.php'); 
 ?>
@@ -70,11 +71,7 @@
         .myDivTwo {
             position: relative;
             top: -30px;
-        }
-        
-        
-        
-        
+        }   
     }
 </style>
 
@@ -142,7 +139,7 @@
                     
             </div>
             <div class="myDivTwo" style="text-align: center;">
-                <a href="."><button style="padding: 10px 42px;" class="btn btn-primary">Back</button></a>
+                <a href="<?php echo ROOT_URL; ?>"><button style="padding: 10px 42px;" class="btn btn-primary">Back</button></a>
             </div>
         </div>
     </div>
