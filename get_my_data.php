@@ -6,82 +6,9 @@
     include('include/header.php'); 
 ?>
 
-<style>
-    .wrap-content {
-        width: 100%;
-        height: 100vh;
-        /*background: #64B5F6;*/
-        font-family: 'Roboto', Helvetica, sans-serif;
-        padding-left: 4em;
-        padding-right: 4em;
-    }
-    .title {
-        text-align: center;
-        color: #fff;
-        font-family: 'Roboto', Helvetica, sans-serif;
-        font-weight: 900;
-    }
-    hr {
-        width: 50%;
-        margin-bottom: 50px;
-    }
-    .inspire {
-        color: #000;
-    }
-    .inspire h3 {
-        font-family: 'Roboto', Helvetica, sans-serif;
-        font-weight: 900;
-        color: #000;
-    }
-    .inspire a h5 {
-        color: #000;
-        font-weight: 700;
-    }
-    .inspire a {
-        text-decoration: underline;
-        text-decoration-color: #000;
-    }
-    .center {
-        width: 100%;
-        height: auto;
-        text-align: center;
-    }
-    .description {
-        font-size: 14px;
-        line-height: 1.4;
-    }
-    
-    @media screen and (max-width: 600px) {
-        .myDiv {
-            max-height: 300px;
-            overflow-y: scroll;
-            position: relative;
-            top: -25px;
-            padding-right: 10px;
-        }
-        
-        .inspire h3 {
-            font-size: 18px;
-        }
-        
-        .inspire a h5 {
-            font-size: 12px;
-        }
-        
-        .center {
-            position: relative;
-            top: -30px;
-        }
-        
-        .myDivTwo {
-            position: relative;
-            top: -30px;
-        } 
-        .description {
-            font-size: 11px;
-        }
-    }
-</style>
+<head>
+    <link rel="stylesheet" href="include/assets/styles/get.css">
+</head>
 
 <div class="wrap-content">
     <div class="container">

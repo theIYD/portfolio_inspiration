@@ -21,71 +21,9 @@
       }
 ?>
 
-<style>
-    .title {
-        color: #fff;
-        font-weight: 700;
-        font-family: 'Roboto', Helvetica, sans-serif;
-    }
-    p {
-        font-size: 22px;
-        text-align: center;
-        color: #fff;
-        font-family: 'Roboto', Helvetica, sans-serif;
-    }
-    .wrap-content {
-        width: 100%;
-        height: 100vh;
-        /*background: #64B5F6;*/
-        font-family: 'Roboto', Helvetica, sans-serif;
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-    
-    hr {
-        width: 50%;
-    }
-    
-    label {
-        color: #fff;
-        font-size: 18px;
-        letter-spacing: 1px;
-    }
-    
-    .myDiv {
-        position: relative; 
-        top: 100px;
-    }
-    
-    form {
-        position: relative;
-        top: 50px;
-    }
-    
-    @media screen and (max-width: 600px){
-        p {
-            font-size: 16px;
-        }
-        
-        label {
-            font-size: 16px;
-            letter-spacing: inherit;
-        }
-        
-        .myDiv {
-            top: 50px;
-        }
-        
-        .center {
-            text-align: center;
-        }
-        
-        form {
-            top: 30px;
-        }
-    }
-    
-</style>
+<head>
+    <link rel="stylesheet" href="include/assets/styles/addData.css">
+</head>
 <?php include('include/header.php') ?>
  <div class="wrap-content">
      <div class="container myDiv">
