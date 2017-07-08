@@ -6,8 +6,9 @@
     if (isset($_POST['submit-form'])) {
         $name = $_POST['username'];
         $link = $_POST['web-link'];
+        $profession = $_POST['profession'];
 
-        $query = "INSERT INTO users (name, link) VALUES('$name', '$link')";
+        $query = "INSERT INTO users (name, link, profession) VALUES('$name', '$link', '$profession')";
 
         if(!mysqli_query($connec, $query)) {
           echo '<div class="container"><h3 class="alert alert-danger"><span class="glyphicon glyphicon-remove">Failed</span></h3></div>';
@@ -91,16 +92,19 @@
     <div class="row">
       <h2 class="title" align="center">Portfolio's Collection</h2>
       <hr>
-      <p>It is a crowd sourced website where users can enter the link of portfolio's which can be used <br> as an inspiration to those who are beginners in building a portfolio of themselves.</p>
       <form method="post" action="">
         <div class="form-group">
           <label for="username">Name of the portfolio owner</label>
-          <input class="form-control" type="text" name="username" value="">
+          <input class="form-control" type="text" name="username" placeholder="Enter name">
         </div>
 
         <div class="form-group">
           <label for="web-link">Inspiration Link:</label>
-          <input class="form-control" type="text" name="web-link" value="">
+          <input class="form-control" type="text" name="web-link" placeholder="Link to portfolio">
+        </div>
+        <div class="form-group">
+          <label for="profession">Profession: </label>
+          <input class="form-control" type="text" name="profession" placeholder="A line about the person">
         </div>
         <div class="center">
         <input type="submit" name="submit-form" class="btn btn-success">

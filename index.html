@@ -46,6 +46,8 @@
     .wrap-content {
         position: relative;
         top: 30%;
+        padding-left: 2em;
+        padding-right: 2em;
     }
     
     hr {
@@ -85,6 +87,23 @@
     .get:hover {
         background: #0D47A1;
     }
+    
+    p {
+        font-size: 22px;
+        font-family: 'Roboto', Helvetica, sans-serif;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .wrap-content {
+            top: 15%;
+        }
+        
+        p {
+            font-size: 16px;
+        }
+    }
 
 </style>
 <main>
@@ -93,6 +112,7 @@
         <div class="wrap-content">
             <h1>Welcome !</h1>
             <hr>
+            <p>It is a crowd sourced website where users can enter the link of portfolio's <br> which can be used as an inspiration to those who are beginners in building a portfolio of themselves.</p>
             <a href="addData.php"><button role="button" class="btn btn-info add">Add Inspiration</button></a>
             <a href="get_my_data.php"><button role="button" class="btn btn-primary get">Take inspiration</button></a>
         </div>

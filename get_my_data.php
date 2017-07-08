@@ -46,6 +46,10 @@
         height: auto;
         text-align: center;
     }
+    .description {
+        font-size: 14px;
+        line-height: 1.4;
+    }
     
     @media screen and (max-width: 600px) {
         .myDiv {
@@ -53,6 +57,7 @@
             overflow-y: scroll;
             position: relative;
             top: -25px;
+            padding-right: 10px;
         }
         
         .inspire h3 {
@@ -71,7 +76,10 @@
         .myDivTwo {
             position: relative;
             top: -30px;
-        }   
+        } 
+        .description {
+            font-size: 11px;
+        }
     }
 </style>
 
@@ -100,7 +108,8 @@
 
                while($data = mysqli_fetch_array($r)) {
                    echo '<div class="well inspire"><h3>'. $data['name'] .'</h3>';
-                   echo '<a href=http://'. $data['link'] .'><h5>'.$data['link'].'</h5></a></div>';
+                   echo '<a href=http://'. $data['link'] .'><h5>'.$data['link'].'</h5></a>';
+                   echo '<em><p class="description">'. $data['profession']. '</p></em></div>';
                }
 
                //Free the result
@@ -139,7 +148,7 @@
                     
             </div>
             <div class="myDivTwo" style="text-align: center;">
-                <a href="<?php echo ROOT_URL; ?>"><button style="padding: 10px 42px;" class="btn btn-primary">Back</button></a>
+                <a href="<?php echo ROOT_URL; ?>"><button class="btn btn-info">Back</button></a>
             </div>
         </div>
     </div>
