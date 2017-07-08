@@ -51,6 +51,12 @@
     }
     
     @media screen and (max-width: 600px) {
+        
+        .wrap-content {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+        
         .myDiv {
             max-height: 300px;
             overflow-y: scroll;
