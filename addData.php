@@ -23,6 +23,7 @@
 
 <head>
     <link rel="stylesheet" href="include/assets/styles/addData.css">
+    <title>Add Inspiration</title>
 </head>
 <?php include('include/header.php') ?>
  <div class="wrap-content">

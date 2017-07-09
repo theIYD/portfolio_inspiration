@@ -8,6 +8,5 @@
   <link rel="stylesheet" href="https://bootswatch.com/cerulean/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="include/assets/styles/background.css">
-  <title>Portfolio Inspirations</title>
 </head>
 <body>

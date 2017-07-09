@@ -8,6 +8,7 @@
 
 <head>
     <link rel="stylesheet" href="include/assets/styles/get.css">
+    <title>Get Inspiration</title>
 </head>
 
 <div class="wrap-content">
